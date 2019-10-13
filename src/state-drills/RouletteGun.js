@@ -1,4 +1,5 @@
 import React from 'react';
+import MyButton from './Mybutton';
 
 class RouletteGun extends React.Component {
     static defaultProps = {
@@ -51,6 +52,8 @@ class RouletteGun extends React.Component {
                 <button onClick={this.handleTheSpin}>
                     Pull the trigger!
                 </button>
+                <MyButton handleClick={this.handleTheSpin}/>
+                
                
             </div>
         )
